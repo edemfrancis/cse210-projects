@@ -63,6 +63,7 @@ class Program
                 Console.WriteLine("Enter file name in that has being save in .txt or .csv");
                 string filename = Console.ReadLine();
                 newJournal.LoadFromFile(filename);
+                newJournal.Display();
             }
 
         }

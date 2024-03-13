@@ -32,7 +32,7 @@ public class Journal
                 outputFile.WriteLine("Date: " + entry._date);
                 outputFile.WriteLine("Prompt Text: " + entry._promptText);
                 outputFile.WriteLine("Entry Text: " + entry._UserEntryText);
-                outputFile.WriteLine(); // Separate entries with an empty line
+                outputFile.WriteLine();
                 }
 
             }
@@ -61,13 +61,12 @@ public class Journal
                         entry._UserEntryText = entryText;
                     }
                  _entries.Add(entry);
-                Display();
             }
         // if (parts.Length >= 3)
         //     {
-        //         string date = parts[0][6..]; // Remove "Date: "
-        //         string promptText = parts[1][13..]; // Remove "Prompt Text: "
-        //         string entryText = parts[2][11..]; // Remove "Entry Text: "
+        //         string date = parts[0][6..]; 
+        //         string promptText = parts[1][13..];
+        //         string entryText = parts[2][11..]; 
         //         entry._date = date;
         //         entry._promptText = promptText;
         //         entry._UserEntryText = entryText;
